@@ -1,6 +1,6 @@
 # RimWorld Texture Optimizer
 
-A high-performance tool to optimize textures in your RimWorld mods, drastically improving loading times and VRAM usage for all GPUs, including Intel Arc.
+A high-performance tool to optimize textures in your RimWorld mods, drastically improving loading times and VRAM usage for all GPUs.
 
 ## Why Use This Tool?
 Large RimWorld mod lists often suffer from slow loading and high memory use due to unoptimized PNG textures. This tool converts them into a more efficient format (DDS), giving you:
