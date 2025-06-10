@@ -88,7 +88,7 @@ Run `RimWorldOptimizer.exe` or `python rimworld_gui.py`.
 | RimPy (GPU) | NVIDIA only | 2-4 hours | Default BC3 | CUDA required |
 | RimPy (CPU) | Any | 6+ hours | Default BC3 | Slow fallback |
 
-*Real-world test: **79,774 textures processed in 59 minutes** using **Intel Arc B580 (12GB) x i9-9900k***
+*Real-world test: **376 mods, with 79,774png textures processed in 59 minutes** using **Intel Arc B580 (12GB) x i9-9900k***
 
 ## Troubleshooting
 
@@ -100,3 +100,5 @@ Run `RimWorldOptimizer.exe` or `python rimworld_gui.py`.
 
 ## License
 CC0 - Public Domain – Free to use, modify, and distribute.
+
+Linux Support - Coming Soontm
