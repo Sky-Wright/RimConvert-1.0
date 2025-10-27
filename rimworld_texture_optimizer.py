@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-RimWorld Texture Optimizer v2.0
-================================
+RimConvert v1.0
+===============
 
 A comprehensive texture conversion tool for RimWorld mods using RimPy's proven approach.
 Uses Microsoft's texconv.exe with BC7 compression for optimal results.
@@ -87,7 +87,7 @@ CONFIG_FILE = "rimworld_optimizer_config.json"
 def print_banner():
     """Print the application banner."""
     print("=" * 70)
-    print("🚀 RimWorld Texture Optimizer v2.0 - RimPy Edition")
+    print("🚀 RimConvert v1.0 - RimPy Edition")
     print("   Using Microsoft texconv.exe with BC7 compression")
     print("=" * 70)
     print()
@@ -617,7 +617,7 @@ def build_exe():
         sys.executable, "-m", "PyInstaller",
         "--onefile",
         "--console",
-        "--name", "RimWorldTextureOptimizer",
+        "--name", "RimConvert",
         "--distpath", "./dist",
         "--workpath", "./build",
         __file__
@@ -685,7 +685,7 @@ def main():
     
     # Parse command line arguments
     parser = argparse.ArgumentParser(
-        description="RimWorld Texture Optimizer v2.0 - Using RimPy's proven approach",
+        description="RimConvert v1.0 - Using RimPy's proven approach",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

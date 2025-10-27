@@ -2,15 +2,15 @@
 setlocal enabledelayedexpansion
 
 REM =============================================================================
-REM RimWorld Texture Optimizer - Setup and Launch Script
+REM RimConvert - Setup and Launch Script
 REM =============================================================================
 
-title RimWorld Texture Optimizer
+title RimConvert
 color 0A
 
 echo.
 echo ===============================================================================
-echo   RimWorld Texture Optimizer
+echo   RimConvert
 echo   A modern Rimworld texture optimization tool.
 echo   Made for the community, by Sky
 echo ===============================================================================
@@ -127,7 +127,7 @@ goto menu
 :build_gui_exe
 echo.
 echo Building standalone GUI executable...
-echo This will create RimWorldOptimizer.exe in the dist folder
+echo This will create RimConvert.exe in the dist folder
 echo.
 python -m PyInstaller RimWorldOptimizer.spec
 if errorlevel 1 (
@@ -147,5 +147,5 @@ goto menu
 
 :exit_script
 echo.
-echo Thank you for using RimWorld Texture Optimizer!
+echo Thank you for using RimConvert!
 exit /b 0

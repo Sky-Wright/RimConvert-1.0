@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-RimWorld Texture Optimizer GUI v2.0
-===================================
+RimConvert GUI v1.0
+===================
 
 Modern GUI interface for RimWorld texture conversion using RimPy's proven approach.
 Features dark theme, progress tracking, and user-friendly operation.
@@ -81,7 +81,7 @@ class RimWorldOptimizerGUI:
         else:
             self.root.geometry("800x650") # Default if not found
 
-        self.root.title("RimWorld Texture Optimizer") # UPDATED default window title
+        self.root.title("RimConvert") # UPDATED default window title
         # self.root.geometry("800x650") # Moved up
         self.root.resizable(True, True)
         
@@ -314,7 +314,7 @@ class RimWorldOptimizerGUI:
         main_frame.columnconfigure(2, weight=0) # Keep column 2 (buttons) fixed
         
         # Title
-        title_label = ttk.Label(main_frame, text="RimWorld Texture Optimizer", 
+        title_label = ttk.Label(main_frame, text="RimConvert",
                                style='Header.TLabel', anchor=tk.CENTER) # UPDATED text, added anchor
         title_label.grid(row=0, column=0, columnspan=3, pady=(0, 5), sticky="ew") # Added sticky="ew" for centering
         
@@ -448,7 +448,7 @@ class RimWorldOptimizerGUI:
         
         self.restore_button.config(state=NORMAL) # Restore doesn't depend on texconv
         self.cancel_button.config(state=DISABLED)
-        self.root.title("RimWorld Texture Optimizer") # UPDATED reset window title
+        self.root.title("RimConvert") # UPDATED reset window title
         self.processing = False # Ensure processing flag is reset
 
     def load_config(self):
@@ -532,9 +532,9 @@ class RimWorldOptimizerGUI:
         
         # Update window title with progress
         if self.processing and value > 0:
-            self.root.title(f"RimWorld Texture Optimizer - {value}% Complete") # UPDATED Title during processing
+            self.root.title(f"RimConvert - {value}% Complete") # UPDATED Title during processing
         elif not self.processing:
-            self.root.title("RimWorld Texture Optimizer") # UPDATED default/idle window title
+            self.root.title("RimConvert") # UPDATED default/idle window title
         
         self.root.update_idletasks()
           
